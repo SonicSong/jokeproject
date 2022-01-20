@@ -24,6 +24,7 @@ def clicked():
 window = Tk()
 window.title("Totally Not Malware")
 window.geometry('600x281')
+window.resizable(width=False, height=False)
 img_load = Image.open("tsukasa-hiiragi.png")
 img_rend = ImageTk.PhotoImage(img_load)
 img = Label(window, image=img_rend)
